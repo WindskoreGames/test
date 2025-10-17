@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKIT SNYGG Linje Hemsida</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+            max-width: 800px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px #00ffff;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #00ffff; }
+            to { text-shadow: 0 0 20px #ff00ff; }
+        }
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        button {
+            background: linear-gradient(45deg, #00ffff, #ff00ff);
+            border: none;
+            color: #121212;
+            font-size: 1.2em;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-weight: bold;
+        }
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Välj en Linje!</h1>
+        <div class="button-grid">
+            <button onclick="window.open('Linje-3.png', '_blank')">Linje 3</button>
+            <button onclick="window.open('Linje-4.png', '_blank')">Linje 4</button>
+            <button onclick="window.open('Linje-5.png', '_blank')">Linje 5</button>
+            <button onclick="window.open('Linje-12.png', '_blank')">Linje 12</button>
+            <button onclick="window.open('Linje-13.png', '_blank')">Linje 13</button>
+            <button onclick="window.open('Linje-16.png', '_blank')">Linje 16</button>
+            <button onclick="window.open('Linje-17.png', '_blank')">Linje 17</button>
+            <button onclick="window.open('Linje-18.png', '_blank')">Linje 18</button>
+            <button onclick="window.open('Linje-20.png', '_blank')">Linje 20</button>
+        </div>
+    </div>
+</body>
+</html>
